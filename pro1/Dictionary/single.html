@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 8px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>NIST AMASING Proejct </h2>
+<p><i><b>Single-Criteria Search</b></i><p>
+<p><i>Relevant Parameters</i><p>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type target1(BLANK IS NOT ALLOWED!)" title="Type in a name">
+
+<p id="demo"></p>
+
+<table id="myTable">
+						<tr class="header">
+							<th style="width:1%;">Source</th>
+							<th style="width:1%;">Target</th>
+							<th style="width:1%;">Type</th>
+							
+						</tr>
+
+
+					<tr>
+						<td >Fatigue</td>
+						<td >Surface roughness</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Void</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Keyhole</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Cavity</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Pores</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Lack of Fusion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Thermal Distortion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Crack</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Fatigue</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Void</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Keyhole</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Lack of Fusion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Pores</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Cavity</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Thermal Distortion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Crack</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Tensile Strength</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Void</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Keyhole</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Cavity</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Pores</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Lack of Fusion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Density</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Surface roughness</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Thermal Distortion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Powder Spatter</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Balling</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Geometric Dimension</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Powder Spatter</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Balling</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Surface roughness</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Void</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Keyhole</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Lack of Fusion</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Pores</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cavity</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Thermal Distortion</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Crack</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Powder Spatter</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Melt Pool Size</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Balling</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Cooling Rate</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Thermal Distribution</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distortion</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Melt Pool Size</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Frame</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Cooling Rate</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >Thermal radiation</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal Distribution</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Photon energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Radiation</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >Infrared energy</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >Wavelength</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Thermal radiation</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Photon energy</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Photon energy</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Photon energy</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Wavelength</td>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Wavelength</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Wavelength</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Wavelength</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Infrared energy</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Infrared energy</td>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Infrared energy</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Electromagnetic spectrum of CCD/CMOS camera</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Frame</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Frame</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Frame</td>
+						<td >CCD/CMOS camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Frame</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+					<tr>
+						<td >Electromagnetic spectrum of IR camera</td>
+						<td >IR camera</td>
+						<td >Directed</td>
+					</tr>
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    
+	td = tr[i].getElementsByTagName("td")[0];
+    if (td) {document.getElementById("demo").innerHTML = "Target1: "+filter;
+    		 
+		if (td.innerHTML.toUpperCase().indexOf(filter) > -1) 
+			{tr[i].style.display = "";}
+		
+		else {tr[i].style.display = "none";}
+        
+    }
+			
+  }
+}
+</script>
+</body>
+</html>
